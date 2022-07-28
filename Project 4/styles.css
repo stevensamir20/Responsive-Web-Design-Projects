@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#page-wrapper {
+    position: relative;
+}
+/* Header Styling */
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    height: 60px;
+    background-color: black;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-img {
+    height: 60px;
+    margin-left: 20px;
+}
+#header-text {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: white;
+}
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+#nav-bar li {
+    display: inline;
+    margin-right: 20px;
+}
+#nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* First Section Styling */
+#form-submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 100px 20px 100px;
+}
+/* Features Section Styling */
+#features {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px;
+}
+.grid-icon {
+    width: 100px;
+    margin-right: 20px;
+}
+.grid-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#grid-icon1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#grid-text1 {
+    grid-column: 2/7;
+    grid-row: 1/2;
+}
+#grid-icon2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#grid-text2 {
+    grid-column: 2/7;
+    grid-row: 2/3;
+}
+#grid-icon3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#grid-text3 {
+    grid-column: 2/7;
+    grid-row: 3/4;
+}
+/* Review Section Styling */
+#review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+iframe {
+    width: 70%;
+}
+/* Products Section Styling */
+#products {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 50px;
+}
+.product {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    #products {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .product {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+}
